@@ -1028,7 +1028,7 @@ def ordenar_meses(mes_ano_str):
 
 # 🔥 CONFIGURAÇÃO DA PÁGINA STREAMLIT
 st.set_page_config(
-    page_title="FutAlgorithm",
+    page_title="Análise FC",
     page_icon="⚽",
     layout="wide"
 )
@@ -1218,7 +1218,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # 🔥 EXECUÇÃO PRINCIPAL MODIFICADA - NOVA SEQUÊNCIA DE ABAS
-with st.spinner("🔄 Coletando dados de 40 competições em tempo real..."):
+with st.spinner("🔄 Coletando dados em tempo real..."):
     dados_todos = extrair_todas_competicoes()
 
 if dados_todos:
