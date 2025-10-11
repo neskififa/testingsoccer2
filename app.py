@@ -1213,7 +1213,7 @@ st.markdown("""
 # Header personalizado
 st.markdown("""
 <div class="main-header">
-    <h1>FutAlgorithm</h1>
+    <h1>Análise FC 🔥</h1>
 </div>
 """, unsafe_allow_html=True)
 
