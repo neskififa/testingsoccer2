@@ -1043,7 +1043,7 @@ st.markdown("""
         background: linear-gradient(135deg, #0c0f15 0%, #1a1d2e 100%);
     }
     .main-header {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #667eea 0%, #0b81f6 100%);
         padding: 2rem;
         border-radius: 15px;
         margin-bottom: 2rem;
@@ -1084,7 +1084,7 @@ st.markdown("""
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     }
     .stTabs [aria-selected="true"] {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        background: linear-gradient(135deg, #667eea 0%, #0b81f6 100%) !important;
         color: white !important;
         border: 1px solid rgba(255, 255, 255, 0.2);
         border-bottom: none;
@@ -1130,7 +1130,7 @@ st.markdown("""
         text-align: center;
     }
     .ranking-header {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #667eea 0%, #0b81f6 100%);
         color: white;
         padding: 15px;
         border-radius: 10px;
@@ -1183,7 +1183,7 @@ st.markdown("""
         border: 1px solid #2d3746 !important;
     }
     div[data-testid="stDataFrame"] thead th {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        background: linear-gradient(135deg, #667eea 0%, #0b81f6 100%) !important;
         color: white !important;
         font-weight: 700 !important;
         text-align: center !important;
@@ -1423,7 +1423,7 @@ if dados_todos:
                 emoji_posicao = "🥇"
 
                 st.markdown(f"""
-                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                <div style="background: linear-gradient(135deg, #667eea 0%, #0b81f6 100%); 
                             padding: 25px; border-radius: 15px; margin: 20px 0; color: white; text-align: center;">
                     <div style="font-size: 2rem; margin-bottom: 10px;">
                         {emoji_posicao} {liga_top['Liga']}
@@ -1596,7 +1596,7 @@ if dados_todos:
                 for jogo in jogos_ordenados:
                     with st.container():
                         st.markdown(f"""
-                        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                        <div style="background: linear-gradient(135deg, #667eea 0%, #0b81f6 100%); 
                                     padding: 15px; border-radius: 12px; margin: 15px 0; color: white;">
                             <div style="font-size: 16px; font-weight: bold; margin-bottom: 10px;">
                                 ⚽ {jogo['casa']} vs {jogo['fora']} | 📅 {jogo['data']} | 🏆 {jogo['liga']}
