@@ -1028,7 +1028,7 @@ def ordenar_meses(mes_ano_str):
 
 # 🔥 CONFIGURAÇÃO DA PÁGINA STREAMLIT
 st.set_page_config(
-    page_title="Análise FC",
+    page_title="FutGenius ⚽",
     page_icon="⚽",
     layout="wide"
 )
@@ -1213,7 +1213,7 @@ st.markdown("""
 # Header personalizado
 st.markdown("""
 <div class="main-header">
-    <h1>Análise FC 🔥</h1>
+    <h1>FutGenius ⚽</h1>
 </div>
 """, unsafe_allow_html=True)
 
@@ -1231,7 +1231,7 @@ if dados_todos:
 
     # 🔥 NOVA SEQUÊNCIA DE ABAS
     tab1, tab2, tab3, tab4 = st.tabs(
-        ["🔍 BUSCAR JOGOS", "🎯 ALERTAS INTELIGENTES", "📊 DICAS ESTATÍSTICAS", "🗃️ BASE DE DADOS"])
+        ["🔍 BUSCAR JOGOS", "📊 RANKING ESTATÍSTICOS", "🎯 ALERTAS INTELIGENTES", "🗃️ DADOS HISTÓRICOS"])
 
     with tab1:
         # Aba "Buscar Jogos" - Partidas com coluna "HT" vazia
