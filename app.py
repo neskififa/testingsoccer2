@@ -1334,11 +1334,9 @@ if dados_todos:
                 colunas_ordenadas = [
                     'Competição', 'Casa', 'Fora',
                     'Casa Vence', 'Empate', 'Fora Vence',
-                    'Gols HT', 'Over 0.5 HT', 'Over 1.5 HT',
-                    'Casa Marca HT', 'Fora Marca HT',
-                    'Gols FT', 'Over 0.5 FT', 'Over 1.5 FT', 'Over 2.5 FT',
-                    'Over 3.5 FT', 'Over 4.5 FT',
-                    'Casa Marca 1.5', 'Fora Marca 1.5', 'Btts FT', 'Btts & Over 2.5'
+                    'Over 0.5 HT',
+                    'Over 0.5 FT', 'Over 1.5 FT',
+                    'Btts FT', 'Btts & Over 2.5'
                 ]
 
                 # Manter apenas colunas existentes
