@@ -1028,7 +1028,7 @@ def ordenar_meses(mes_ano_str):
 
 # 🔥 CONFIGURAÇÃO DA PÁGINA STREAMLIT
 st.set_page_config(
-    page_title="FutGenius ⚽",
+    page_title="FutAlgorithm",
     page_icon="⚽",
     layout="wide"
 )
@@ -1043,7 +1043,7 @@ st.markdown("""
         background: linear-gradient(135deg, #0c0f15 0%, #1a1d2e 100%);
     }
     .main-header {
-        background: linear-gradient(135deg, #667eea 0%, #0b81f6 100%);
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         padding: 2rem;
         border-radius: 15px;
         margin-bottom: 2rem;
@@ -1084,7 +1084,7 @@ st.markdown("""
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     }
     .stTabs [aria-selected="true"] {
-        background: linear-gradient(135deg, #667eea 0%, #0b81f6 100%) !important;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
         color: white !important;
         border: 1px solid rgba(255, 255, 255, 0.2);
         border-bottom: none;
@@ -1130,7 +1130,7 @@ st.markdown("""
         text-align: center;
     }
     .ranking-header {
-        background: linear-gradient(135deg, #667eea 0%, #0b81f6 100%);
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         color: white;
         padding: 15px;
         border-radius: 10px;
@@ -1183,7 +1183,7 @@ st.markdown("""
         border: 1px solid #2d3746 !important;
     }
     div[data-testid="stDataFrame"] thead th {
-        background: linear-gradient(135deg, #667eea 0%, #0b81f6 100%) !important;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
         color: white !important;
         font-weight: 700 !important;
         text-align: center !important;
@@ -1213,12 +1213,12 @@ st.markdown("""
 # Header personalizado
 st.markdown("""
 <div class="main-header">
-    <h1>FutGenius ⚽</h1>
+    <h1>FutAlgorithm</h1>
 </div>
 """, unsafe_allow_html=True)
 
 # 🔥 EXECUÇÃO PRINCIPAL MODIFICADA - NOVA SEQUÊNCIA DE ABAS
-with st.spinner("🔄 Coletando dados em tempo real..."):
+with st.spinner("🔄 Coletando dados de 40 competições em tempo real..."):
     dados_todos = extrair_todas_competicoes()
 
 if dados_todos:
@@ -1231,7 +1231,7 @@ if dados_todos:
 
     # 🔥 NOVA SEQUÊNCIA DE ABAS
     tab1, tab2, tab3, tab4 = st.tabs(
-        ["🔍 BUSCAR JOGOS", "📊 RANKING ESTATÍSTICOS", "🎯 ALERTAS INTELIGENTES", "🗃️ DADOS HISTÓRICOS"])
+        ["🔍 BUSCAR JOGOS", "🎯 ALERTAS INTELIGENTES", "📊 DICAS ESTATÍSTICAS", "🗃️ BASE DE DADOS"])
 
     with tab1:
         # Aba "Buscar Jogos" - Partidas com coluna "HT" vazia
@@ -1334,9 +1334,11 @@ if dados_todos:
                 colunas_ordenadas = [
                     'Competição', 'Casa', 'Fora',
                     'Casa Vence', 'Empate', 'Fora Vence',
-                    'Over 0.5 HT',
-                    'Over 0.5 FT', 'Over 1.5 FT',
-                    'Btts FT', 'Btts & Over 2.5'
+                    'Gols HT', 'Over 0.5 HT', 'Over 1.5 HT',
+                    'Casa Marca HT', 'Fora Marca HT',
+                    'Gols FT', 'Over 0.5 FT', 'Over 1.5 FT', 'Over 2.5 FT',
+                    'Over 3.5 FT', 'Over 4.5 FT',
+                    'Casa Marca 1.5', 'Fora Marca 1.5', 'Btts FT', 'Btts & Over 2.5'
                 ]
 
                 # Manter apenas colunas existentes
@@ -1421,7 +1423,7 @@ if dados_todos:
                 emoji_posicao = "🥇"
 
                 st.markdown(f"""
-                <div style="background: linear-gradient(135deg, #667eea 0%, #0b81f6 100%); 
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
                             padding: 25px; border-radius: 15px; margin: 20px 0; color: white; text-align: center;">
                     <div style="font-size: 2rem; margin-bottom: 10px;">
                         {emoji_posicao} {liga_top['Liga']}
@@ -1594,7 +1596,7 @@ if dados_todos:
                 for jogo in jogos_ordenados:
                     with st.container():
                         st.markdown(f"""
-                        <div style="background: linear-gradient(135deg, #667eea 0%, #0b81f6 100%); 
+                        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
                                     padding: 15px; border-radius: 12px; margin: 15px 0; color: white;">
                             <div style="font-size: 16px; font-weight: bold; margin-bottom: 10px;">
                                 ⚽ {jogo['casa']} vs {jogo['fora']} | 📅 {jogo['data']} | 🏆 {jogo['liga']}
